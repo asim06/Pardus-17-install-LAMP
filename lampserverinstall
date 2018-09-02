@@ -1,0 +1,48 @@
+#sudo apt update
+#sudo apt upgrade
+#apt-get -y install apache2
+#systemctl start apache2
+#systemctl restart apache2
+#systemctl status apache2.service
+
+
+#apt install ufw
+
+#ufw status
+#ufw allow 80/tcp
+#ufw allow 443/tcp
+#ufw reload
+#ufw enable
+
+Test apache server http://localhost veya ip adresi http://192.168.1.8
+
+#apt-get -y install mariadb-server
+prest enter
+root şifreniz
+root şifreniz tekrar
+y
+y
+y
+y
+y
+
+#apt-get -y install php php-mysql
+#systemctl restart apache2
+# nano /var/www/html/info.php
+info.php dosyasına php hakkında bilgi verilecek komut yazılır
+<?php phpinfo(); ?>
+
+test php http://localhost/info.php
+
+#apt-get install phpmyadmin
+apache2
+yes
+ok
+yes
+
+#nano /etc/apache2/apache2.conf apache configure for phpmyadmin
+
+Include /etc/phpmyadmin/apache.conf
+
+#service apache2 restart
+
