@@ -1,21 +1,28 @@
 #sudo apt update
 #sudo apt upgrade
+
+#apache web serverin yüklenmesi
 #apt-get -y install apache2
+
+#apache serveri başlatma,yeniden başlatma ve durumunu gösterme
 #systemctl start apache2
 #systemctl restart apache2
 #systemctl status apache2.service
 
-
+#firawall kurulması
 #apt install ufw
 
+#firewall üzerinde portların açılması
 #ufw status
 #ufw allow 80/tcp
 #ufw allow 443/tcp
 #ufw reload
 #ufw enable
 
-Test apache server http://localhost veya ip adresi http://192.168.1.8
+#Test apache server http://localhost veya ip adresi http://192.168.1.8 
 
+
+#veritabanı MySQL kurulması
 #apt-get -y install mariadb-server
 prest enter
 root şifreniz
@@ -26,11 +33,15 @@ y
 y
 y
 
+#Güncel php7 sürümünün kurulması
 #apt-get -y install php php-mysql
 #systemctl restart apache2
+
 # nano /var/www/html/info.php
-info.php dosyasına php hakkında bilgi verilecek komut yazılır
+
 <?php phpinfo(); ?>
+
+# oluşturulan dosyanın içine kopyalanır
 
 test php http://localhost/info.php
 
