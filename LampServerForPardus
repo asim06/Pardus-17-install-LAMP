@@ -23,7 +23,12 @@
 
 
 #veritabanı MySQL kurulması
-#apt-get -y install mariadb-server
+#apt install mariadb-server mariadb-client
+#systemctl status mariadb
+#mysql_secure_installation
+#mariadb -u root
+#exit;
+#mariadb --version
 prest enter
 root şifreniz
 root şifreniz tekrar
